@@ -31,5 +31,6 @@ public class VisitCareers {
         String careersUrl = "https://www.comtrade.com/careers/";
         String career = driver.findElement(By.xpath("//a[@href=\"" + careersUrl + "\"]")).getAttribute("href");
         driver.get(career);
+        Assert.assertEquals("https://www.comtrade.com/careers/",driver.getCurrentUrl());
     }
 }
