@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -19,7 +20,7 @@ public class VisitPodcast {
     }
     @AfterAll
     static void close() throws Exception{
-//        driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -29,5 +30,6 @@ public class VisitPodcast {
         String podcastUrl = "https://www.comtrade.com/podcast/";
         String podcast = driver.findElement(By.xpath("//a[@href=\"" + podcastUrl + "\"]")).getAttribute("href");
         driver.get(podcast);
+        Assert.assertEquals("https://www.comtrade.com/podcast/",driver.getCurrentUrl());
     }
 }
