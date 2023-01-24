@@ -20,7 +20,7 @@ public class LogoExistance {
     }
     @AfterAll
     static void close() throws Exception{
-//        driver.quit();
+        driver.quit();
     }
 
     @Test

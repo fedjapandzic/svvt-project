@@ -24,7 +24,7 @@ public class VisitIntegrations {
     }
     @AfterAll
     static void close() throws Exception{
-//        driver.quit();
+        driver.quit();
     }
 
     @Test

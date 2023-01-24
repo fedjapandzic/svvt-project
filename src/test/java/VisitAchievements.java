@@ -21,7 +21,7 @@ public class VisitAchievements {
     }
     @AfterAll
     static void close() throws Exception{
-//        driver.quit();
+        driver.quit();
     }
 
     @Test

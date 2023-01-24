@@ -21,7 +21,7 @@ public class VisitAboutUs {
     }
     @AfterAll
     static void close() throws Exception{
-//        driver.quit();
+        driver.quit();
     }
 
     @Test

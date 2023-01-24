@@ -21,7 +21,7 @@ public class VisitNews {
     }
     @AfterAll
     static void close() throws Exception{
-//        driver.quit();
+        driver.quit();
     }
 
     @Test
